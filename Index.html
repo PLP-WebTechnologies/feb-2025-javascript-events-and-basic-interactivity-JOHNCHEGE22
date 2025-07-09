@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Wizard Playground</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Wizard Playground</h1>
+        
+        <!-- Button Section -->
+        <section class="button-section">
+            <h2>Button Magic</h2>
+            <button id="colorButton" class="btn">Click Me!</button>
+            <button id="secretButton" class="btn">Double-Click for Secret</button>
+            <button id="longPressButton" class="btn">Hold Me (Long Press)</button>
+        </section>
+
+        <!-- Image Gallery Slideshow -->
+        <section class="gallery-section">
+            <h2>Image Gallery Slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="https://unsplash.com/photos/a-minimalist-room-with-a-surreal-background-zFLn5fDZYw0" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="https://www.pexels.com/photo/chateau-de-pierrefonds-gothic-architecture-32678003" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Slide 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="tabs-section">
+            <h2>Tabs of Wonder</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                <button class="tab-button" data-tab="tab2">Tab 2</button>
+                <button class="tab-button" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content" id="tab1">Content for Tab 1: Welcome to the magical world!</div>
+            <div class="tab-content" id="tab2" style="display: none;">Content for Tab 2: Discover hidden treasures!</div>
+            <div class="tab-content" id="tab3" style="display: none;">Content for Tab 3: Unleash your wizardry!</div>
+        </section>
+
+        <!-- Accordion Section -->
+        <section class="accordion-section">
+            <h2>Accordion Secrets</h2>
+            <div class="accordion">
+                <button class="accordion-button">Section 1</button>
+                <div class="accordion-content">Magical content for section 1.</div>
+                <button class="accordion-button">Section 2</button>
+                <div class="accordion-content">Enchanted content for section 2.</div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Wizard Form</h2>
+            <div class="form-container">
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" id="submitForm" class="btn">Submit</button>
+            </div>
+        </section>
+
+        <!-- Keypress Detection -->
+        <section class="keypress-section">
+            <h2>Keypress Magic</h2>
+            <p>Press any key to see the magic: <span id="keyOutput">...</span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
